@@ -5,6 +5,7 @@
 package supermarket_mvc;
 
 import supermarket_mvc.view.CustomerView;
+import supermarket_mvc.view.HomeView;
 import supermarket_mvc.view.OrderView;
 
 /**
@@ -17,8 +18,7 @@ public class Supermarket_MVC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        new CustomerView().setVisible(true);
-        new OrderView().setVisible(true);
+        new HomeView().setVisible(true);
     }
     
 }

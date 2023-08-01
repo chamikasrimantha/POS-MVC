@@ -53,7 +53,7 @@ public class ItemController {
         return itemModels;
     }
     
-    public ItemModel getItem(String itemCode) throws SQLException{
+    public ItemModel searchItem(String itemCode) throws SQLException{
         Connection connection = DBConnection.getInstance().getConnection();
         String query = "SELECT * FROM Item WHERE ItemCode =?";
         PreparedStatement statement = connection.prepareStatement(query);
